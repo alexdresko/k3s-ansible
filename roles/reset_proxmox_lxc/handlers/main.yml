@@ -1,1 +1,3 @@
-../../proxmox_lxc/handlers/main.yml
+---
+- name: Import Proxmox LXC handlers
+  ansible.builtin.import_tasks: ../../proxmox_lxc/handlers/main.yml
