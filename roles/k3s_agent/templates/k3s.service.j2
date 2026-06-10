@@ -4,7 +4,7 @@ Documentation=https://k3s.io
 After=network-online.target
 
 [Service]
-Type=notify
+Type=exec
 ExecStartPre=-/sbin/modprobe br_netfilter
 ExecStartPre=-/sbin/modprobe overlay
 # Conditional snapshotter based on PXE boot status
